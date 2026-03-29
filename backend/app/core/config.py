@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
 
     database_url: str = Field(
-        default="postgresql+psycopg://postgres:postgres@localhost:5432/recon_dev"
+        default="postgresql+psycopg://ryangael@localhost:5432/recon_dev"
     )
 
     cors_origins: list[str] = Field(default_factory=lambda: ["http://localhost:5173"])
